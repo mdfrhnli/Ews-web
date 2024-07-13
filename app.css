@@ -57,10 +57,11 @@ body {
 }
 
 .card img {
-    width: 318px;
+
     height: 315px;
     padding: 0;
     border-radius: 15px;
+    transition: transform 0.3s ease-in 0s;
 }
 
 .card-body {
@@ -72,7 +73,8 @@ body {
 }
 
 .card-body p {
-    font-size: 30px;
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 
 .blurb h2 {
@@ -114,5 +116,17 @@ body {
 
     .blurb h2 {
         font-size: 2rem;
+    }
+
+    .card-body p {
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    .card img {
+        height: 315px;
+        padding: 0;
+        border-radius: 15px;
+        transition: transform 0.3s ease-in 0s;
     }
 }
