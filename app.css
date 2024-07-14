@@ -132,12 +132,18 @@ iframe {
 
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
+    .body {
+        padding: 0%;
+        margin: 0%;
+        border: 0px;
+    }
+
     .row {
         flex-direction: column;
     }
 
     .col-md-6 {
-        width: 500px;
+        width: 490px;
         order: initial;
     }
 
@@ -158,6 +164,10 @@ iframe {
 
     .components {
         display: none;
+    }
+
+    .img-fluid {
+        width: 470px;
     }
 }
 
