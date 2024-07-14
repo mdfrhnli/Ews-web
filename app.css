@@ -86,7 +86,7 @@ body {
 .blurb p {
     color: #adacc1;
     font-weight: 100;
-    font-size: 0.975rem;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
@@ -152,7 +152,7 @@ iframe {
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .body {
-        padding: 0%;
+        padding-left: 15px;
         margin: 0%;
         border: 0px;
     }
@@ -162,7 +162,7 @@ iframe {
     }
 
     .col-md-6 {
-        width: 490px;
+        width: 470px;
         order: initial;
     }
 
@@ -175,10 +175,15 @@ iframe {
         align-items: center;
     }
 
-    .blurb {
-        text-align: center;
+    .blurb p,
+    .blurb h2 {
+        text-align: left;
         /* Center align text */
         margin: 0;
+    }
+
+    .blurb p {
+        font-size: 1rem;
     }
 
     .components {
@@ -186,7 +191,7 @@ iframe {
     }
 
     .img-fluid {
-        width: 470px;
+        width: 440px;
     }
 }
 
@@ -201,8 +206,9 @@ iframe {
     }
 
     .blurb h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
+
 
     .card-body p {
         font-weight: 300;
