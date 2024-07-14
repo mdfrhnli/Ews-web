@@ -16,39 +16,58 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="app.css">
 
-    <title>Engeering Workshop</title>
+    <title>Engineering Workshop</title>
+
+    <style>
+        @media (max-width: 768px) {
+            .order-sm-1 {
+                order: 1 !important;
+            }
+
+            .order-sm-2 {
+                order: 2 !important;
+            }
+
+            .order-sm-3 {
+                order: 3 !important;
+            }
+
+            .order-sm-4 {
+                order: 4 !important;
+            }
+
+            .order-sm-5 {
+                order: 5 !important;
+            }
+
+            .order-sm-6 {
+                order: 6 !important;
+            }
+
+            .text-center-sm {
+                text-align: center;
+            }
+
+            .blurb {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!--<section class="container-fluid px-0">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div id="headingGroup" class="text-white text-center d-none d-sm-block mt-5">
-                    <h1 class="">Engineering<span>/</span>work<span>/</span>shop</h1>
-                    <h1 class="">Engineering<span>/</span>work<span>/</span>shop</h1>
-                    <h1 class="">Engineering<span>/</span>work<span>/</span>shop</h1>
-                    <h1 class="">Engineering<span>/</span>work<span>/</span>shop</h1>
-                    <h1 class="">Engineering<span>/</span>work<span>/</span>shop</h1>
-                    <h1 class="">Engineering<span>/</span>work<span>/</span>shop</h1>
-
-                </div>
-            </div>
-        </div>
-    </section>-->
-
     <section class="banner">
         <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.9/build/spline-viewer.js"></script>
         <spline-viewer url="https://prod.spline.design/uCugcLpOQn8qS7QP/scene.splinecode"></spline-viewer>
-
     </section>
 
-
     <section class="container-fluid px-0">
+        <!-- Introduction Section -->
         <div class="row align-items-center content">
-            <div class="col-md-6 order-2 order-md-1">
+            <div class="col-md-6 order-sm-3 order-md-1">
                 <img src="E:\newstuff\ews-web\images\singlephasesupply.jpg" alt="tools required" class="img-fluid">
             </div>
-            <div class="col-md-6 text-center order-1 order-md-2">
+            <div class="col-md-6 text-center-sm order-sm-2 order-md-2">
                 <div class="row justify-content-center">
                     <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                         <h2>Introduction</h2>
@@ -62,8 +81,10 @@
                 </div>
             </div>
         </div>
+
+        <!-- Staircase Wiring Section -->
         <div class="row align-items-center content">
-            <div class="col-md-6 text-center">
+            <div class="col-md-6 text-center-sm order-sm-4 order-md-1">
                 <div class="row justify-content-center">
                     <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                         <h2>Staircase Wiring</h2>
@@ -75,18 +96,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 order-sm-5 order-md-2">
                 <a href="https://youtu.be/8BOVgv7e_BY?feature=shared">
-                    <img src="E:\newstuff\ews-web\images\twowayswitch.jpg" alt="idk" class="img-fluid">
+                    <img src="E:\newstuff\ews-web\images\2wayswitch.jpg" alt="idk" class="img-fluid">
                 </a>
             </div>
         </div>
-        </div>
+
+        <!-- Two Lamps Section -->
         <div class="row align-items-center content">
-            <div class="col-md-6 order-2 order-md-1">
+            <div class="col-md-6 order-sm-6 order-md-1">
                 <img src="E:\newstuff\ews-web\images\onewayswitch.jpg" alt="idk" class="img-fluid">
             </div>
-            <div class="col-md-6 text-center order-1 order-md-2">
+            <div class="col-md-6 text-center-sm order-sm-7 order-md-2">
                 <div class="row justify-content-center">
                     <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                         <h2>Two lamps connected in series and one in parallel</h2>
@@ -99,6 +121,34 @@
                 </div>
             </div>
         </div>
+
+        <!-- Tinkercad Section -->
+        <div class="row align-items-center content">
+            <div class="col-md-6 order-sm-1">
+                <div class="tinkercad">
+                    <div class="tinker">
+                        <div class="tinker-body">
+                            <h2>2 Lamps in series and 1 in Parallel</h2>
+                        </div>
+                        <iframe width="100%" height="350" src="https://www.tinkercad.com/embed/iqUph26hVK1?editbtn=1"
+                            frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-sm-2">
+                <div class="tinkercad">
+                    <div class="tinker">
+                        <div class="tinker-body">
+                            <h2>Stair Case Wiring</h2>
+                        </div>
+                        <iframe width="100%" height="350" src="https://www.tinkercad.com/embed/i4Ogo5FxX7p?editbtn=1"
+                            frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Components Section -->
         <div class="components">
             <div class="card">
                 <img src="E:\newstuff\ews-web\images\wires.jpg" class="card-img-top">
@@ -107,7 +157,6 @@
                     <p class="card-text">Connecting Wires</p>
                 </div>
             </div>
-
             <div class="card">
                 <img src="E:\newstuff\ews-web\images\Curcuit breaker.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -130,28 +179,8 @@
                 </div>
             </div>
         </div>
-        <div class="tinkercad">
-            <div class="tinker">
-                <div class="tinker-body"><br>
-                    <h2> 2 Lamps in series and 1 in Parallel</h2>
-                </div>
-                <iframe width="560" height="350" src="https://www.tinkercad.com/embed/iqUph26hVK1?editbtn=1"
-                    frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-            </div>
-
-            <div class="tinker">
-                <div class="tinker-body"><br>
-                    <h2> Stair Case Wiring.</h2>
-                </div>
-                <iframe width="560" height="350" src="https://www.tinkercad.com/embed/i4Ogo5FxX7p?editbtn=1"
-                    frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-            </div>
-        </div>
-
-
-
-
     </section>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
