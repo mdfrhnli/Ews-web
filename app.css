@@ -130,6 +130,25 @@ iframe {
     height: 385px;
 }
 
+.Names {
+    display: flex;
+    justify-content: space-around;
+}
+
+.change {
+    border: 2px solid black;
+    padding: 3px;
+    background-color: rgb(130, 132, 132);
+    transition-property: transform background-color color;
+    transition-duration: 0.5s;
+}
+
+.change:hover {
+    transform: translateY(-5px);
+    background-color: azure;
+    color: black;
+}
+
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .body {
